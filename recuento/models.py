@@ -42,6 +42,6 @@ class Vote(models.Model):
     token = models.CharField(max_length=50)
     question_options = models.ManyToManyField(QuestionOption, through='OptionPerVote')
 
-class Results(models.Model):
-    question_option = models.ForeignKey()
+class Result(models.Model):
+    question_option = models.OneToOneField(QuestionOption, null=False)
     quantity = models.IntegerField()
