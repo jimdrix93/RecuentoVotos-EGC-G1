@@ -25,7 +25,7 @@ class QuestionOption(models.Model):
 
 class OptionPerVote(models.Model):
     question_option = models.ForeignKey(QuestionOption, on_delete=models.CASCADE)
-    vote = models.ForeignKey(Vote, on_delete=models.CASCADE)
+    vote = models.ForeignKey('Vote', on_delete=models.CASCADE)
 
 
 VOTE_TYPE = (
