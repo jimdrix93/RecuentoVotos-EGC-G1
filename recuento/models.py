@@ -41,3 +41,7 @@ class Vote(models.Model):
     vote_date = models.DateTimeField
     token = models.CharField(max_length=50)
     question_options = models.ManyToManyField(QuestionOption, through='OptionPerVote')
+
+class Results(models.Model):
+    question_option = models.ForeignKey()
+    quantity = models.IntegerField()
