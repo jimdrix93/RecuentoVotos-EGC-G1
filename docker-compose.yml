@@ -1,0 +1,6 @@
+version: '3'
+services:
+  recvotes:
+    build: .
+    ports:
+     - 52007:8000
