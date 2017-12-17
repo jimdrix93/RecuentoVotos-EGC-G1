@@ -2,5 +2,19 @@ version: '3'
 services:
   recvotes:
     build: .
+    volumes: 
+      - .:/home/RecuentoVotos-EGC-G1
     ports:
      - 52007:8000
+
+  mysql:
+    image: mariadb:10.1
+    environment:
+      #MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_ROOT_PASSWORD: recvotes
+      MYSQL_DATABASE: splc2017
+    volumes: 
+      - ./db_dump:/docker-entrypoint-initdb.d
+      - /var/lib/mysql
+    ports:
+      - "3306:3306"
