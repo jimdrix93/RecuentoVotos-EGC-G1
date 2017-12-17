@@ -4,7 +4,7 @@ from datetime import date
 def test():
 
     cnx = mysql.connector.connect(user='root', password='recvotes',
-                              host='mysql',
+                              host='localhost',
                               database='votaciones_splc')
     cursor = cnx.cursor()
 
