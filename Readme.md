@@ -22,9 +22,8 @@ Existen dos ramas principales, "develop" y "master". Sobre la rama *develop* se 
  La rama *master* contendrá sólo versiones que se consideren estables, y por lo tanto es la que debería ser usada por el equipo de integración para realizar la integración de el recuento de votos.
 
 
-# Estructura de la aplicación
-
 #Instalacion
+
 #Instalacion de python 3
 ```
 sudo apt-get install python3
@@ -36,26 +35,26 @@ Escribir en la terminal:
 python
 ```
 Se abrira la consola de python
-####Para salir de la misma esbribir 
+Para salir de la misma esbribir 
 ```
 exit()
 ```
 
-#Instalacion de pip
+Instalacion de pip
 ```
 python get-pip.py
 ```
-##En caso de resultar en un error:
+En caso de resultar en un error:
 Este error que nos puede aparecer tiene como causa una incorrecta adicion de paquetes de python luego
 ```
 sudo apt-get install python-pip
 ```
-##Si este error persiste: 
+Si este error persiste: 
 ```
 python get-pip.py --user
 python get-pip.py --no-index --find-links=/local/copies
 ```
-##Como opcion adicional upgradear el "existente":  
+Como opcion adicional upgradear el "existente":  
 ```
 pip install -U pip
 ```
@@ -67,12 +66,12 @@ Instalar django, desde la terminal ejecutar->
 pip install django==1.11.7
 ```
 
-##Meter Django en el path
+Meter Django en el path
 ```
  PYTHONPATH=/path/to/django/parent/dir python
   »> import django
 ```
-##Instalar conector mysql, desde la terminal
+Instalar conector mysql, desde la terminal
 ```
 pip install PyMySQL
 ``` 
