@@ -22,9 +22,9 @@ Existen dos ramas principales, "develop" y "master". Sobre la rama *develop* se 
  La rama *master* contendrá sólo versiones que se consideren estables, y por lo tanto es la que debería ser usada por el equipo de integración para realizar la integración de el recuento de votos.
 
 
-#Instalacion
+# Instalacion
 
-#Instalacion de python 3
+# Instalacion de python 3
 ```
 sudo apt-get install python3
 ```
@@ -59,7 +59,7 @@ Como opcion adicional upgradear el "existente":
 pip install -U pip
 ```
 
-#Instalacion de django
+# Instalacion de django
 Posicionarte en tu terminal en el directorio definido en el cual vas a trabajar
 Instalar django, desde la terminal ejecutar->
 ```
