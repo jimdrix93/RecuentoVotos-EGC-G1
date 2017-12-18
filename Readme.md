@@ -4,14 +4,22 @@ Este proyecto corresponde al módulo de Recuento de votos de Agora@US 2017/18 del
 
 # Miembros del equipo
 
--Pablo Roldán Sánchez ([@Roldans](https://github.com/Roldans))
--Ernesto de Tovar Vázquez ([@ernestodtv](https://github.com/ernestodtv))
--Arturo Ronda Lucena([@ernestodtv](https://github.com/ernestodtv))
--Álvaro Acha Burgos([@Alvachbur](https://github.com/Alvachbur))
--Francisco Javier Huertas Vera([@Javrd](https://github.com/Javrd))
--Javier Rodriguez Martin([@jimdrix93](https://github.com/jimdrix93))
+-Pablo Roldán Sánchez ([@Roldans](https://github.com/Roldans))  
+
+-Ernesto de Tovar Vázquez ([@ernestodtv](https://github.com/ernestodtv))  
+
+-Arturo Ronda Lucena([@ernestodtv](https://github.com/ernestodtv))  
+
+-Álvaro Acha Burgos([@Alvachbur](https://github.com/Alvachbur))  
+
+-Francisco Javier Huertas Vera([@Javrd](https://github.com/Javrd))  
+
+-Javier Rodriguez Martin([@jimdrix93](https://github.com/jimdrix93))  
 
 # Organización del repositorio
+
+Existen dos ramas principales, "develop" y "master". Sobre la rama *develop* se realizarán todos los cambios en el proyecto durante el desarrollo de la aplicación,
+ La rama *master* contendrá sólo versiones que se consideren estables, y por lo tanto es la que debería ser usada por el equipo de integración para realizar la integración de el recuento de votos.
 
 
 # Estructura de la aplicación
