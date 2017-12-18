@@ -1,3 +1,8 @@
+import os
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "AgoraUS.settings")
+import django
+django.setup()
 from recuento.models import Poll
 from recuento.models import Result
 def approvecount(pollid):
@@ -16,4 +21,9 @@ def approvecount(pollid):
         '''
         QuestionOption=question.questionoption_set.all()
         for option in QuestionOption:
-           new_result = Result.object.get_or_create(question_option =option,quantity=len(option.optionpervote_set.all))
+            optionspervote=option.optionpervote_set.all()
+            new_result = Result.objects.get_or_create(question_option =option,quantity=len(optionspervote))
+if 1==0 :
+    approvecount(10)
+    for a in Result.objects.all():
+        print str(a.id)+","+str(a.quantity)+","+a.question_option.description
