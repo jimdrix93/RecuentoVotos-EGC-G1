@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import mysql.connector
 from datetime import date
 import os
@@ -14,9 +15,26 @@ from recuento.models import Vote
 
 
 def loadpoll(pollid):
-    cnx = mysql.connector.connect(user='root', password='recvotes',
-                                  host='localhost',
-                                  database='votaciones_splc')
+
+    user        = os.environ.get('MYSQL_USER')
+    password    = os.environ.get('MYSQL_PASSWORD')
+    url         = os.environ.get('MYSQL_URL')
+    port        = os.environ.get('MYSQL_PORT')
+    database    = os.environ.get('MYSQL_DATABASE')
+
+    user     = 'root'            if user     == None else user
+    password = 'recvotes'        if password == None else password
+    url      = 'localhost'       if url      == None else url
+    port     =  3306             if port     == None else port
+    database = 'votaciones_splc' if database == None else database
+
+    cnx = mysql.connector.connect(
+        user = user,
+        password = password,
+        host = url,
+        port = port,
+        database = database
+    )
     cursor = cnx.cursor()
     '''
     Selecionamos la poll y la guardamos en la base de datos
