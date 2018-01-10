@@ -9,8 +9,7 @@ services:
  - mariadb
  - docker
 
-install:
- - pip install --no-cache-dir -r requirements.txt
+
 
 branches:
   - develop
