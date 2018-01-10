@@ -9,6 +9,8 @@ services:
  - mariadb
  - docker
 
+install:
+ - "pip install -r requirements.txt"
 
 
 branches:
