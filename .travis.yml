@@ -18,7 +18,6 @@ install:
 before_install:
   - mysql -e 'DROP DATABASE IF EXISTS votaciones_splc'
   - mysql -e 'CREATE DATABASE IF NOT EXISTS votaciones_splc;'  
-  - mysql -u root --default-character-set=utf8 votaciones_splc < db_dump/01_splc2017_programa.sql
   - mysql -u root --default-character-set=utf8 votaciones_splc < db_dump/02_script_create_votaciones_splc.sql
   - mysql -u root --default-character-set=utf8 votaciones_splc < db_dump/03_script_populate_votaciones_splc.sql
  
